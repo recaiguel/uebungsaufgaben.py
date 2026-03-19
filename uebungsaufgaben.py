@@ -144,6 +144,8 @@ else:
     print("Password korrekt!") """
 
 
+# Teil 4 - Strings & Listen
+
 # Aufgabe 12: Zeichen zählen
 
 """ textInput = input("Geben Sie einen Text ein:\n")
@@ -182,5 +184,100 @@ print(f'Summe: {sum(zahlen)}')
 print(f'Durchschnitt: {average}') """
 
 
-# Aufgabe 15
+# Teil 5 Funktion
 
+# Aufgabe 15: Größtes Element
+
+""" zahlen = [4, 12, 7, 21, 9]
+
+maxWert = zahlen[0]
+
+for i in zahlen:
+    
+    if i > maxWert:
+        maxWert = i 
+print(maxWert)
+
+
+
+for i in range(len(zahlen)):
+    if zahlen[i]>maxWert:
+        maxWert=zahlen[i]
+print(maxWert)  """  
+
+
+# Aufgabe 16: Quadrat- Funktion
+
+""" def quadrat():
+    
+    x = int(input("Gib eine Zahl ein um das Quadrat dieser Zahl auszugeben.\n"))
+    print(x * x)
+
+quadrat() """
+
+
+# Aufgabe 17: Gerade Zahl prüfen
+
+""" def geradeZahl():
+
+    #Userinput einer beliebigen Zahl
+    try:
+        x = int(input("Gib eie beliebege Zahl ein\n"))
+    except ValueError:
+        print("Fehler: Bitte eine gültige Zahl eingeben")
+        return
+          
+        if x % 2 == 0:
+            print("True")
+        else:
+            print("False")
+            
+geradeZahl() """
+
+
+# Aufgabe 18: Taschenrechner als Funktion
+
+""" def taschenrechner():
+
+    try:
+        Zahl1 = float(input("Erste Zahl\n"))
+    except ValueError:
+        print("Bitte gib eine gültige Zahl ein")
+        return
+    
+    try:
+        Zahl2 = float(input("Zweite Zahl\n"))
+    except ValueError:
+        print("Bitte gib eine gültige Zahl ein")
+        return
+
+    allowedOperator = ['+', '-', '*', '/', '%']
+
+    operator = input()
+
+    if operator not in allowedOperator:
+        print("Ungültiger Operator")
+        return
+    
+    if operator == '+':
+        Ergebnis = Zahl1 + Zahl2
+    elif operator == '-':
+        Ergebnis = Zahl1 - Zahl2
+    elif operator == '*':
+        Ergebnis = Zahl1 * Zahl2
+    elif operator == '/':
+        Ergebnis = Zahl1 / Zahl2
+        if Zahl2 == 0:
+            print("Division durch Null nicht möglich!")
+            return
+    elif operator == '%':
+        Ergebnis = Zahl1 % Zahl2
+    
+    print(f"Ergebnis: {Zahl1} {operator} {Zahl2} = {Ergebnis}")
+
+taschenrechner() """
+
+
+# Teil 6 - Anwendung
+
+# Aufgabe 19: Zahlenraten-Spiel

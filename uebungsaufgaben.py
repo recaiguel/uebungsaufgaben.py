@@ -279,5 +279,34 @@ taschenrechner() """
 
 
 # Teil 6 - Anwendung
+    
+ # Aufgabe 19: Zahlenraten-Spiel
 
-# Aufgabe 19: Zahlenraten-Spiel
+import random
+def guessingGame():
+    guess = 0
+    randomNumber = random.randint(1, 100)
+
+        
+    while guess != randomNumber:
+        
+        try:
+            guess = int(input("Gib eine beliebige Zahl zwischen 1 und 100 ein.\n"))
+        except ValueError:
+            print("Gib eine Gültige Zahl ein")
+            return
+
+        if guess <= 0 or guess > 100:
+            continue
+
+        elif guess != randomNumber:
+            print("False")
+            if randomNumber > guess:
+                print("zu niedrig")
+            elif randomNumber < guess:
+                print("zu hoch")
+        else:
+            print("True")
+guessingGame()
+
+

@@ -1,4 +1,5 @@
 # Teil 1: Grundlagen
+
 # Aufgabe 1
 """ print("Gib dein Namen ein.\n")
 
@@ -6,7 +7,8 @@ name = input()
 
 print("Hallo " + name) """
 
-""" # Aufgabe 2
+# Aufgabe 2
+""" 
 print("Zahl 1:\n")
 zahl1 = int(input())
 
@@ -15,7 +17,8 @@ zahl2 = int(input())
 
 print(zahl1 + zahl2) """
 
-""" # Aufgabe 3
+# Aufgabe 3
+""" 
 print("Gib eine Zahl ein.\n")
 geradeOungerade = int(input())
 
@@ -26,7 +29,8 @@ if geradeOungerade % 2 == 0:
 else:
     print("ungerade") """
 
-""" # Aufgabe 4
+# Aufgabe 4
+""" 
 print("Gib dein Alter ein\n")
 age = int(input())
 
@@ -38,7 +42,8 @@ elif age >= 18:
 
 # Teil 2 - Bedingungen und Logik
 
-""" # Aufgabe 5
+# Aufgabe 5
+""" 
 print("Gib eine Punktzahl ein:\n")
 punktzahl = int(input())
 
@@ -89,7 +94,9 @@ elif punktzahl >= 50:
 
 taschenrechner() """
 
-""" # Aufgabe 7: Größte Zahl
+
+# Aufgabe 7: Größte Zahl
+""" 
 
 zahl1 = int(input("Gebe 3 Zahlen ein.\n"))
 zahl2 = int(input())
@@ -106,7 +113,8 @@ elif zahl3 >= zahl1 and zahl3 >= zahl2:
 
 # Teil 3: Schleifen
 
-""" # Aufgabe 8 Zahlen ausgeben
+# Aufgabe 8 Zahlen ausgeben
+""" 
 numbers = 100
 
 for i in range(numbers):
@@ -282,7 +290,7 @@ taschenrechner() """
     
  # Aufgabe 19: Zahlenraten-Spiel
 
-import random
+""" import random
 def guessingGame():
     guess = 0
     randomNumber = random.randint(1, 100)
@@ -307,6 +315,53 @@ def guessingGame():
                 print("zu hoch")
         else:
             print("True")
-guessingGame()
+guessingGame() """
 
 
+# Aufgabe 20: Einkaufsliste
+
+""" einkaufsliste = {}
+ende = False
+
+while ende is not True:
+
+    item = input("Artikel (oder 'fertig): ")
+    if item.lower() == "fertig":
+        ende = True
+    
+    else:
+        preis = float(input(f"Preis für {item}: "))
+        einkaufsliste[item] = preis
+
+# berechnung der Summe
+total = 0
+
+for einzelpreis in einkaufsliste.values():
+    total += einzelpreis
+
+print(f"Gesamtsumme: {total:.2f} Euro") """
+
+
+# Aufgabe 21: Wort umdrehen
+
+""" wort = input("Gib ein Wort ein:\n")
+
+# Ausgabe der variable direkt umgedreht.
+print(wort[::-1]) """
+
+
+# Teil 7: Herausforderung
+
+# Aufgabe 22: Primzahl prüfen
+primzahl = True
+
+number = int(input("Gib eine zahl ein:\n"))
+
+for i in range(2, number):
+    if number != i and number % i == 0:
+        primzahl = False
+        
+    else:
+        primzahl = True
+
+print(primzahl)

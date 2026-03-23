@@ -354,18 +354,18 @@ print(wort[::-1]) """
 
 # Aufgabe 22: Primzahl prüfen
 
-
 """ def primeCheck(n):
 
-    if n < 2:
-        return False
+    if n < 2: return False
+    if n == 2: return True
+    if n % 2 == 0: return False
 
     i = 2
 
     while i * i <= n:
         if n % i == 0:
             return False
-        i += 1
+        i += 2
     return True
 
 # Interaktive Part des Programms
@@ -379,5 +379,33 @@ try:
         print(f"{eingabe} ist keine Primzahl!")
 
 except ValueError:
-    print(f"Hoppla! {eingabe} ist keine gültige Ganzzahl!")
- """    
+    print(f"Hoppla! {eingabe} ist keine gültige Ganzzahl!") """
+    
+
+# Aufgabe 23: Häufigste Zahl
+
+# Hier können einzelne Aufgaben getestet werden
+
+
+# Aufgabe 23: Häufigste Zahl
+""" 
+liste = [5,3,7,8,6,9,10,5,7,5,8,9,6,10,10,7,5,3]
+haeufigkeiten = {}
+
+for zahl in liste:
+    if zahl in haeufigkeiten:
+        haeufigkeiten[zahl] += 1
+    else:
+        haeufigkeiten[zahl] = 1
+
+rekords = max(haeufigkeiten.values())
+
+siegerliste = [zahl for zahl, anzahl in haeufigkeiten.items() if anzahl == rekords]
+print(siegerliste)
+ """
+
+
+# Aufgabe 24: Login-System
+
+
+

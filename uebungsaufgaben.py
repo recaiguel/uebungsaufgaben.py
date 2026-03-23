@@ -353,15 +353,31 @@ print(wort[::-1]) """
 # Teil 7: Herausforderung
 
 # Aufgabe 22: Primzahl prüfen
-primzahl = True
 
-number = int(input("Gib eine zahl ein:\n"))
 
-for i in range(2, number):
-    if number != i and number % i == 0:
-        primzahl = False
-        
+""" def primeCheck(n):
+
+    if n < 2:
+        return False
+
+    i = 2
+
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 1
+    return True
+
+# Interaktive Part des Programms
+
+try:
+    eingabe = int(input("Gib eine Zahl die du prüfen möchtest:\n"))
+
+    if primeCheck(eingabe):
+        print(f"{eingabe} ist eine Primzahl!")
     else:
-        primzahl = True
+        print(f"{eingabe} ist keine Primzahl!")
 
-print(primzahl)
+except ValueError:
+    print(f"Hoppla! {eingabe} ist keine gültige Ganzzahl!")
+ """    

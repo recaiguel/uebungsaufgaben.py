@@ -406,6 +406,31 @@ print(siegerliste)
 
 
 # Aufgabe 24: Login-System
+""" 
+def loginSystem():
+    credential = {
+        'username': 'gingerninja27',
+        'password': 'srspsswrd'
+    }
 
+    count = 0
+    trys = 3
+    print(f"Versuche: {trys}")
+    while count < 3:
+        userInput = input("Benutzername: \n")
+        pwInput = input("Passwort: \n")
 
+        if userInput == credential['username'] and pwInput == credential['password']:
+            print("Anmeldung erfolgreich!\n")
+            break
+        else:
+            count += 1
+            trys -= 1
+            print(f"Versuche: {trys}")
+            print("Benutzername oder Passwort falsch.\n")
+        
+        if count == 3:
+            print("Zu oft falsch eingegeben. Zugang gesperrt!")
 
+loginSystem()
+ """

@@ -356,6 +356,8 @@ print(wort[::-1]) """
 
 """ def primeCheck(n):
 
+# Hier ist die Logik
+
     if n < 2: return False
     if n == 2: return True
     if n % 2 == 0: return False
@@ -383,8 +385,6 @@ except ValueError:
     
 
 # Aufgabe 23: Häufigste Zahl
-
-# Hier können einzelne Aufgaben getestet werden
 
 
 # Aufgabe 23: Häufigste Zahl
@@ -433,4 +433,23 @@ def loginSystem():
             print("Zu oft falsch eingegeben. Zugang gesperrt!")
 
 loginSystem()
+ """
+
+
+# Aufgabe 25: Daten auswerten
+
+""" 
+daten = ["Ben,25", "Anna,30", "Tom,20"]
+alterStr = []
+for person in daten:
+    teile = person.split(",")
+
+    alter = teile[1]
+    alterStr.append(alter)
+
+altersListe = [int(i) for i in alterStr]
+
+durchschnitt = int(sum(altersListe) / len(altersListe))
+
+print(durchschnitt)
  """

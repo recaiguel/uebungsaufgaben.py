@@ -3,9 +3,9 @@
     'price': 8.9,
     'calories_per_slice': 250,
     'toppings': ['mozzarella', 'basil']
-}
+} """
 
-print(pizza['name'])
+""" print(pizza['name'])
 
 pizza['name'] = input()
 
@@ -17,7 +17,7 @@ print(pizza.keys())
 
 print(pizza.values()) """
 
-""" products = {
+products = {
     'Laptop': 990,
     'Smartphone': 600,
     'Tablet': 250,
@@ -45,4 +45,4 @@ for index, product in enumerate(products):
     print(index, product)
 
 for index, product in enumerate(products.items(), 1):
-    print(index, product) """
+    print(index, product)
